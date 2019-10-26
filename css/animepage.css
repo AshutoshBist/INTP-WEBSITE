@@ -1,0 +1,49 @@
+.bodycontainer{
+margin-left: 20%;
+margin-right: 20%;
+}
+
+p :first-letter{
+  text-transform: uppercase;
+}
+p {
+    color: #929292;
+    letter-spacing:0.1em;
+    text-align:center;
+    text-transform: lowercase;
+    font-size: 1em;
+    font-variant: small-caps;
+    width: 800px
+  }
+
+.image{
+  width: 256.4px;
+}
+
+img{
+  display: inline;
+  padding: 20px;
+}
+
+.details ,span.notaion{
+  display: inline;
+  width: 800px;
+}
+
+.details{
+  left: 30%;
+  top: 110px;
+  position: absolute;
+}
+
+.trailer
+{
+  margin: 10px;
+  width: 100%;
+  height: 500px;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+}

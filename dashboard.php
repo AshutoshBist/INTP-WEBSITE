@@ -6,9 +6,7 @@
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/dashboardmodal.css">
     <link rel="stylesheet" href="css/dashboardcarousel.css">
-    <script type="text/javascript" src="modal.js"></script>
     <link rel="stylesheet" href="css/dashboardcards.css">
-    <script type="text/javascript" src="cards.js"></script>
   </head>
   <body>
     <!--navigation Bar-->
@@ -17,10 +15,10 @@
       <ul class="main-nav">
           <li><a href="#">Home</a></li>
           <li><a href="#">Event</a></li>
-          <li class="button" onclick="document.getElementById('id01').style.display='block'" ><a href="#">Login</a>
+          <li class="modalbutton" onclick="document.getElementById('id01').style.display='block'" ><a href="#">Log In</a>
                         <div id="id01" class="modal">
               <form class="modal-content animate" action="login.php" method="post">
-
+                <span class="close" onclick="document.getElementById('id01').style.display='none'">&times;</span>
                 <div class="container">
                   <label for="uname"><b>Username</b></label>
                   <input type="text" placeholder="Enter Username" name="uname" required>
@@ -41,14 +39,29 @@
                 </div>
               </form>
             </div>
+          </li>
+          <li class="button" onclick="document.getElementById('id01').style.display='block'" ><a href="#">Sign Up</a>
+                        <div id="id01" class="modal">
+              <form class="modal-content animate" action="login.php" method="post">
 
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+                  <br>
 
-
-
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <br>
+                </div>
+                <div class="container" style="background-color:#f1f1f1;height:80px;">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button class="login" type="submit">Login</button>
+                </div>
+              </form>
+            </div>
           </li>
       </ul>
 	</header>
-  <body>
    <?php
    $conn = mysqli_connect("localhost", "root", "", "mwl");
    // Check connection
@@ -434,7 +447,6 @@
 </div>
 
 
->
 
       	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 

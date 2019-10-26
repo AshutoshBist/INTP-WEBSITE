@@ -24,6 +24,20 @@ float: left;
 }
 
 
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 
 
@@ -67,33 +81,19 @@ span.psw {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
-  padding-top: 60px;
+  padding-top: 15%;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  padding: 10px 20px 5px 20px;
+  padding: 10px;
   background-color: #fefefe;
-  margin: 10% 40% auto 40%; /* 5% from the top, 15% from the bottom and centered */
+  margin: auto;
   border: 1px solid #888;
   width: 25%; /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
 
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
 
 /* Add Zoom Animation */
 .animate {

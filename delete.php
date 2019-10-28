@@ -24,15 +24,15 @@
     <th>Delete</th>
   </tr>
   <tr>
-    <td data-th="Movie Title"> <img src="img\gintama.jpg" alt="gintama"> </td>
-    <td data-th="Genre">
+    <td data-th="Image"> <img src="img\gintama.jpg" alt="gintama"> </td>
+    <td data-th="Anime">
       <div class="animeDetails">
         <h1>Anime Name</h1>
         <p> Anime Description</p>
       </div>
     </td>
-    <td data-th="Year">1977</td>
-    <td data-th="Gross"><button class="btn draw-border">Delete</button></td>
+    <td data-th="Rating">1977</td>
+    <td data-th="Delete"><button class="btn draw-border">Delete</button></td>
   </tr>
 </table>
 
